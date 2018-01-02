@@ -16,7 +16,7 @@ header.nav {
 }
 .container {
 	margin: auto;
-	width: 75%;
+  width: 75%;
 	height: 60px;
 }
 ul {
@@ -46,29 +46,36 @@ a.active {
 	background-color: #00A79D;
 }
 #main-heading {
-  margin: auto;
+    margin: auto;
 	width: 100%;
 	padding: 10px;
 }
 #main-info {
-  margin: auto;
+    margin: auto;
 	width: 50%;
 
 }
 h1 {
-  margin-top: 80px;
+    margin-top: 80px;
 	margin-bottom: 0;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
 	font-size: 120px;
 	font-weight: bold;
 	color: white;
 	text-shadow: 2px 2px 4px #000000;
 }
 h3 {
-  text-align: center;
+    text-align: center;
 	font-family: "Quicksand", sans-serif;
 	font-size: 36px;
 	font-weight: 600;
 	color: white;
+}
+.login {
+    margin: auto;
+    margin-top: 100px; 
+    width: 50%;
+    background-color: white;
+    height: 500px;
 }
