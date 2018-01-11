@@ -9,16 +9,14 @@
     <body>
 	<header class="nav">
 		<div class="container">
-			<ul>
+			<img src="../img/WebsiteLogo.png" alt="Water & Wick Logo" width=135px height=75px>
+            <ul>
 				<li><a href="index.php">HOME</a></li>
 				<li><a class="active" href="products.php">PRODUCTS</a></li>
 				<li><a href="login.php">LOGIN</a></li>
 			</ul>
 		</div>	
 	</header>
-		
-	<nav>
-	</nav>
 
 	<main>
 		<?php
