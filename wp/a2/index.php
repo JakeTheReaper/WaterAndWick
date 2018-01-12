@@ -15,7 +15,20 @@
         <div class="container">
             <div class="row">
                 <div>
+                    <img class="main-logo-img" src="../img/main-logo.png" alt="Water & Wick logo">
+                </div>
+            </div>
+            <div class="row">
+                <div>
                     <h1 class="main-heading">Weclome To Water & Wick</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <a class="button button-primary u-full-width" href="#">PRODUCTS</a>
+                </div>
+                <div>
+                    <a class="button button-primary u-full-width" href="#">LOGIN</a>
                 </div>
             </div>
         </div>

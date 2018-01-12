@@ -17,6 +17,7 @@ div {
     background-size: cover;
     padding: 20px;
 }
+
 .main-logo-img {
     position: relative;
     margin-top: 0;
@@ -37,8 +38,10 @@ a:hover {
 }
 
 .main-heading {
-    padding: 100px 0 100px 0;
     color: #fff;
+    padding: 50px 0 50px 0;
     text-shadow: 3px 3px black;
-    font-size: 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
 }
