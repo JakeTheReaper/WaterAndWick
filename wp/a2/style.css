@@ -1,8 +1,11 @@
 section {
-    padding: 100px 0 80px;
+    padding: 20px 0 20px;
     text-align: center;
 }
 
+div {
+    display: block;
+}
 .section-one {
     background-image: url(../img/Header-bg.jpg);
     background-size: cover;
@@ -10,11 +13,12 @@ section {
 }
 
 .main-logo {
+    background-image: url(../img/main-bg.jpg);
+    background-size: cover;
     padding: 20px;
 }
 .main-logo-img {
     position: relative;
-    max-width: 100%;
     margin-top: 0;
 }
 
@@ -30,4 +34,11 @@ a {
 
 a:hover {
     color: black;
+}
+
+.main-heading {
+    padding: 100px 0 100px 0;
+    color: #fff;
+    text-shadow: 3px 3px black;
+    font-size: 100px;
 }
