@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section class="main-logo">
+    <section class="section-one">
         <div class="container">
             <div class="row">
                 <div>
@@ -21,45 +21,20 @@
             <div class="row">
                 <div>
                     <h1 class="main-heading">Weclome To Water & Wick</h1>
+                    <h4>Water & Wick is a family owned and operated business that produces handmade candles, wax melts and luxury bath products.</h4>
                 </div>
             </div>
             <div class="row">
                 <div>
-                    <a class="button button-primary u-full-width" href="#">PRODUCTS</a>
+                    <a class="button button-primary u-full-width" href="products.php">PRODUCTS</a>
                 </div>
                 <div>
-                    <a class="button button-primary u-full-width" href="#">LOGIN</a>
+                    <a class="button button-primary u-full-width" href="login.php">LOGIN</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section section-one">
-        <div class="container">
-            <div class="row">
-                <div class="one-third column">
-                    <a href="index.php">
-                        <h5>Home</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat dictum urna at iaculis. Proin vehicula tellus eget efficitur faucibus. Vivamus et nunc nulla.</p>
-                    </a>
-                </div>
-                <div class="one-third column">
-                    <h5>Products</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat dictum urna at iaculis. Proin vehicula tellus eget efficitur faucibus. Vivamus et nunc nulla.</p>
-                </div>
 
-                <div class="one-third column">
-                    <a href="login.php">
-                        <h5>Login</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat dictum urna at iaculis. Proin vehicula tellus eget efficitur faucibus. Vivamus et nunc nulla.</p>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer>
-    </footer>
 </body>
 
 </html>

@@ -1,5 +1,11 @@
+body, html {
+    margin: auto;
+    padding: 0;
+    height: 100%;
+}
+
 section {
-    padding: 20px 0 20px;
+    padding: 10px 0 10px;
     text-align: center;
 }
 
@@ -7,15 +13,16 @@ div {
     display: block;
 }
 .section-one {
-    background-image: url(../img/Header-bg.jpg);
-    background-size: cover;
-    color: #fff;
-}
+     /* The image used */
+    background-image: url(../img/main1-bg.jpg);
 
-.main-logo {
-    background-image: url(../img/main-bg.jpg);
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat-y;
     background-size: cover;
-    padding: 20px;
 }
 
 .main-logo-img {
@@ -23,25 +30,34 @@ div {
     margin-top: 0;
 }
 
-h5 {
+h4 {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-}
-
-a {
-    color:#fff;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
+    color: #fff;
+    padding: 0 0 10px 0;
+    text-shadow: 1px 1px 2px black;
 }
 
 .main-heading {
     color: #fff;
-    padding: 50px 0 50px 0;
-    text-shadow: 3px 3px black;
+    padding: 10px 0 0 0;
+    text-shadow: 3px 3px 5px black;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 60px;
+}
+
+.button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
+.button.button-primary {
+    background-color: #005261;
+    border-color: #005261;
+}
+
+.button.button-primary:hover {
+    background-color: #00A79d;
+    border-color: #00A79d;
 }
