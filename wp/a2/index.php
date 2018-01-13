@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <section class="section-one">
+    <section class="section section-one">
         <div class="container">
             <div class="row">
                 <div>
-                    <img class="main-logo-img" src="../img/main-logo.png" alt="Water & Wick logo">
+                    <img class="u-img-responsive" src="../img/main-logo.png" alt="Water & Wick logo">
                 </div>
             </div>
             <div class="row">

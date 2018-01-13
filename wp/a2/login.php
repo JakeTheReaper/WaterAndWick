@@ -11,11 +11,35 @@
 </head>
 
 <body>
+    <header>
+        <section class="section section-two">
+            <div class="container">
+                <div class="row">
+                    <div class="one-third column">
+                        <a href="index.php">
+                            <h5>HOME</h5>
+                        </a>
+                    </div>
+                    <div class="one-third column">
+                        <a href="products.php">
+                            <h5>PRODUCTS</h5>
+                        </a>
+                    </div>
+
+                    <div class="one-third column">
+                        <a href="login.php">
+                            <h5>LOGIN</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
     <main>
         <div class="container">
             <div class="row">
                 <div class="six columns">
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post">
+                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">
                         Email Address:
                         <input class="u-full-width" type="email" name="email" placeholder="example@example.com">Password:
                         <input class="u-full-width" type="password" name="password" placeholder="********"><br><br>
@@ -25,30 +49,6 @@
             </div>
         </div>
     </main>
-    <section class="section section-one">
-        <div class="container">
-            <div class="row">
-                <div class="one-third column">
-                    <a href="index.php">
-                        <h5>Home</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat dictum urna at iaculis. Proin vehicula tellus eget efficitur faucibus. Vivamus et nunc nulla.</p>
-                    </a>
-                </div>
-                <div class="one-third column">
-                    <h5>Products</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat dictum urna at iaculis. Proin vehicula tellus eget efficitur faucibus. Vivamus et nunc nulla.</p>
-                </div>
-
-                <div class="one-third column">
-                    <a href="login.php">
-                        <h5>Login</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat dictum urna at iaculis. Proin vehicula tellus eget efficitur faucibus. Vivamus et nunc nulla.</p>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <footer>
     </footer>
