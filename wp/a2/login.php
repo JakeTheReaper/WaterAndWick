@@ -38,19 +38,21 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="six columns">
                     <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">
-                        Email Address:
-                        <input class="u-full-width" type="email" name="email" placeholder="example@example.com">Password:
-                        <input class="u-full-width" type="password" name="password" placeholder="********"><br><br>
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" placeholder="example@example.com" required>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" placeholder="********" required>
+                        <div class="row">
                         <input class="button-primary" type="submit" value="Submit">
+                        </div>
                     </form>
-                </div>
             </div>
         </div>
     </main>
 
     <footer>
+        <div class="footer login-footer" id="login-footer">&copy; Copyright 2018 Water &amp; Wick</div>
     </footer>
 </body>
 

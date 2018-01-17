@@ -98,7 +98,8 @@
         </div>
     </main>
 
-    <footer>
+   <footer>
+        <div class="footer">&copy; Copyright 2018 Water &amp; Wick</div>
     </footer>
 </body>
 

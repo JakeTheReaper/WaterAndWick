@@ -37,7 +37,6 @@
     </header>
     <main>
         <div class="container">
-            <a href="index.php">
                <div class="row">
                 <div>
                     <h3 class="desc-heading">Soy Wax Candles</h3>
@@ -60,15 +59,14 @@
                 </div>
                 <div class="one-third column">
                     <ul>
-                        <li>Mango Papaya</li>
-                        <li>Pomegranate Champagne</li>
-                        <li>Sheer Lily & White Rose</li>
-                        <li>Strawberries Champagne</li>
-                        <li>Wild Frangipani</li>
+                        <a class="button button-primary">Mango Papaya</a>
+                        <a class="button button-primary">Pomegranate Champagne</a>
+                        <a class="button button-primary">Sheer Lily & White Rose</a>
+                        <a class="button button-primary">Strawberries Champagne</a>
+                        <a class="button button-primary">Wild Frangipani</a>
                     </ul>
                 </div>
             </div>
-            </a>
             <div class="row">
                 <div>
                     <h3 class="desc-heading">Soy Wax Melts</h3>
@@ -80,21 +78,21 @@
                 </div>
                 <div class="one-third column">
                     <ul>
-                        <li>Bohemian Dream</li>
-                        <li>Boysenberry</li>
-                        <li>Coconut Lime</li>
-                        <li>Fifty Shades</li>
-                        <li>French Vanilla</li>
+                        <a class="button button-primary">Bohemian Dream</a>
+                        <a class="button button-primary">Boysenberry</a>
+                        <a class="button button-primary">Coconut Lime</a>
+                        <a class="button button-primary">Fifty Shades</a>
+                        <a class="button button-primary">French Vanilla</a>
                     </ul>
                     
                 </div>
                 <div class="one-third column">
                     <ul>
-                        <li>Mango Papaya</li>
-                        <li>Pomegranate Champagne</li>
-                        <li>Sheer Lily & White Rose</li>
-                        <li>Strawberries Champagne</li>
-                        <li>Wild Frangipani</li>
+                        <a class="button button-primary">Mango Papaya</a>
+                        <a class="button button-primary">Pomegranate Champagne</a>
+                        <a class="button button-primary">Sheer Lily & White Rose</a>
+                        <a class="button button-primary">Strawberries Champagne</a>
+                        <a class="button button-primary">Wild Frangipani</a>
                     </ul>
                 </div>
             </div>
@@ -109,11 +107,11 @@
                 </div>
                 <div class="one-third column">
                     <ul>
-                        <li>Bohemian Dream</li>
-                        <li>Coconut Lime</li>
-                        <li>French Lavender</li>
-                        <li>Mango Papaya</li>
-                        <li>Watermelon Lemonade</li>
+                        <a class="button button-primary">Bohemian Dream</a>
+                        <a class="button button-primary">Coconut Lime</a>
+                        <a class="button button-primary">French Lavender</a>
+                        <a class="button button-primary">Mango Papaya</a>
+                        <a class="button button-primary">Watermelon Lemonade</a>
                     </ul>
                 </div>
             </div>
@@ -128,10 +126,10 @@
                 </div>
                 <div class="one-third column">
                     <ul>
-                        <li>Bohemian Dream</li>
-                        <li>French Lavender</li>
-                        <li>Mango Papaya</li>
-                        <li>Sheer Lily & White Rose</li>
+                        <a class="button button-primary">Bohemian Dream</a>
+                        <a class="button button-primary">French Lavender</a>
+                        <a class="button button-primary">Mango Papaya</a>
+                        <a class="button button-primary">Sheer Lily & White Rose</a>
                     </ul>
                 </div>
             </div>
@@ -139,6 +137,7 @@
     </main>
 
     <footer>
+        <div class="footer">&copy; Copyright 2018 Water &amp; Wick</div>
     </footer>
 </body>
 

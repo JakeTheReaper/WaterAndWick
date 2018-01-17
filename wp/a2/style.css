@@ -141,3 +141,20 @@ li {
 #change-option {
     display: inline-block;
 }
+
+.footer {
+    background-image: url('../img/Header-bg.jpg');
+    background-size: cover;
+    margin-top: 100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 25px 0 10px 0;
+    text-align: center;
+    height: 40px;
+    color: #fff;
+}
+
+.login-footer {
+    position: absolute;
+}
