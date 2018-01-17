@@ -94,7 +94,6 @@ p {
 .button.button-primary {
     background-color: #005261;
     border-color: #005261;
-    line-height: 0;
 }
 
 .button.button-primary:hover {
@@ -135,12 +134,10 @@ li {
     clear: both;
 }
 
-.qty-counter {
-}
 .qty-input {
     clear: none;
-    
 }
 
-.qty-counter1 {
+#change-option {
+    display: inline-block;
 }

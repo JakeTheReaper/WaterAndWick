@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
     <script src="https://use.fontawesome.com/5f01efa180.js"></script>
-    <script src="../a2/app.js"></script>
+    <script type="text/javascript" src="../a2/app.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Water and Wick</title>
 </head>
@@ -56,45 +56,43 @@
                         <p><strong>Middle Notes:</strong> Coconut husk, lily of the valley and rosewood</p>
                         <p><strong>Base Notes:</strong> Musk, woody and rose petals</p>
                     </aside>
-                    
+
                     <div class="one-half column price">
-                        <h2 id="candle-price">$30.00</h2>
+                        <h2 id="candle-price">$20.00</h2>
                     </div>
-                    
+
+                    <div class="quantity">
+
+
+
+
+                    </div>
+
+
                     <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
                         <input type="hidden" name="id" value="BDC001">
+
+
                         <div class="quantity">
 
                             <label for="size">Size:</label>
-                            <select id="select_id" name="Size">
-                                <option value="small">Small</option>
-                                <option value="large">Large</option>
+                            <select name="option">
+                                <option id="small" value="small">Small</option>
+                                <option id="large" value="large" >Large</option>
                             </select>
-                        </div>
-                    </form>
-
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
-                        <input type="hidden" name="id" value="BDC001">
-                        <div class="quantity">
 
                             <label for="qty">Qty:</label>
-                            <button class="button button-primary qty-counter" type="button" aria-label="Subtract 1" title="Subtract 1" aria-controls="qty"><i class="fa fa-minus-square fa-1" aria-hidden="true"></i></button>
+                            <button class="button button-primary qty-subtract" onclick="decrementQuantity()" type="button" aria-label="Subtract 1" title="Subtract 1"><i class="fa fa-minus-square fa-1" aria-hidden="true"></i></button>
 
-                            <input class="qty-input" aria-live="hidden" type="number" name="qty" id="qty" value="1" title="Qty">
+                            <input class="qty-input" type="number" name="qty" id="qty" min="1" value="1" title="Qty">
 
-                            <button class="button button-primary qty-counter1" type="button" aria-label="Add 1" title="Add 1" aria-controls="qty"><i class="fa fa-plus-square fa-6" aria-hidden="true"></i></button>
+                            <button class="button button-primary qty-add" onclick="incrementQuantity()" type="button" aria-label="Add 1" title="Add 1" aria-controls="qty"><i class="fa fa-plus-square fa-6" aria-hidden="true"></i></button>
                         </div>
 
-
-                        <input class="button-primary" type="submit" value="ADD TO CART">
-
-
+                        <button id="updateTotal" type="button" onclick="totalPrice()">UPDATE TOTAL</button>
+                        <input class="button-primary" type="submit" value="ADD TO CART" onclick="return inputCheck();">
 
                     </form>
-                    
-
-                    <div>
-                    </div>
                 </div>
             </div>
         </div>
