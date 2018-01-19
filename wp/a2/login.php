@@ -38,15 +38,20 @@
     <main>
         <div class="container">
             <div class="row">
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">
+                <div>
+                    <h3 class="desc-heading">LOGIN</h3>
+                </div>
+                <div >
+                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post" align="center">
                         <label for="email">Email Address:</label>
                         <input type="email" name="email" placeholder="example@example.com" required>
                         <label for="password">Password:</label>
-                        <input type="password" name="password" placeholder="********" required>
+                        <input type="password" name="password" placeholder="********" required >
                         <div class="row">
-                        <input class="button-primary" type="submit" value="Submit">
+                            <input class="button-primary" type="submit" value="Submit">
                         </div>
                     </form>
+                </div>
             </div>
         </div>
     </main>

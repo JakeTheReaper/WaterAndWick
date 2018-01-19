@@ -61,15 +61,8 @@
                         <h2 id="candle-price">$20.00</h2>
                     </div>
 
-                    <div class="quantity">
 
-
-
-
-                    </div>
-
-
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
+                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post" onsubmit="return inputCheck();">
                         <input type="hidden" name="id" value="BDC001">
 
 
@@ -90,7 +83,9 @@
                         </div>
 
                         <button id="updateTotal" type="button" onclick="totalPrice()">UPDATE TOTAL</button>
-                        <input class="button-primary" type="submit" value="ADD TO CART" onclick="return inputCheck();">
+                        <input class="button-primary" type="submit" value="ADD TO CART" >
+                        
+                        <script>console.log(document.getElementById("qty").value)</script>
 
                     </form>
                 </div>

@@ -45,11 +45,13 @@ function totalPrice() {
 function inputCheck() {
     var noInput = document.getElementById("qty").value;
 
-    if (noInput.length == 0) {
+    if (noInput.value.length == 0) {
         alert("Invalid Input! Minimum Quantity is 1");
         return false;
     } else if (noInput < 1) {
         alert("Invalid Input! Minimum Quantity is 1");
         return false;
     }
+    else 
+        return true;
 }
