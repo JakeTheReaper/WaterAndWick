@@ -1,0 +1,159 @@
+body,
+html {
+    margin: auto;
+    padding: 0;
+    height: 100%;
+}
+
+form {
+    margin-bottom: 0;
+    display: inline-block;
+    
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+section {
+    padding: 10px 0 10px;
+    text-align: center;
+}
+
+.section-one {
+    /* The image used */
+    background-image: url('../img/main1-bg.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+h4,
+h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+h5:hover {
+    color: #005261;
+    text-shadow: none;
+}
+
+.desc-heading {
+    color: #005261;
+    text-shadow: none;
+}
+.attribute-heading {
+    color: #005261;
+    text-shadow: none;
+    margin-top: 0;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    color: #005261;
+    margin-bottom: 5px;
+}
+
+.main-heading {
+    color: #fff;
+    padding: 10px 0 0 0;
+    text-shadow: 3px 3px 5px black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
+.button.button-primary {
+    background-color: #005261;
+    border-color: #005261;
+}
+
+.button.button-primary:hover {
+    background-color: #00A79d;
+    border-color: #00A79d;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-two {
+    background-image: url('../img/Header-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 10px 0 10px 0;
+}
+
+.u-img-responsive {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+li {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #005261;
+    margin-bottom: 0;
+}
+
+.price {
+    margin-top: 25px;
+    clear: both;
+}
+
+.qty-input {
+    clear: none;
+}
+
+#change-option {
+    display: inline-block;
+}
+
+.footer {
+    background-image: url('../img/Header-bg.jpg');
+    background-size: cover;
+    margin-top: 100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 25px 0 10px 0;
+    text-align: center;
+    height: 40px;
+    color: #fff;
+}
+
+.login-footer {
+    position: absolute;
+}
