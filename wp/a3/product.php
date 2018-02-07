@@ -1,7 +1,7 @@
 <?php
 		session_start();
 		include_once('tools.php');
-        include_once("/home/eh1/e54061/public_html/wp/debug.php");
+        include_once('debug.php');
 		topModule('Water And Wick');
 
 		define(PID, $_GET['pid']);
