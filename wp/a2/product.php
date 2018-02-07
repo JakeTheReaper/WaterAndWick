@@ -58,7 +58,7 @@
                     </aside>
 
                     <div class="one-half column price">
-                        <h2 id="candle-price">$20.00</h2>
+                        <p></p>
                     </div>
 
 

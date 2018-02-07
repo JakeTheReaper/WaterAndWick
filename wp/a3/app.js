@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', decrementQuantity, incrementQuantity(price), totalPrice, inputCheck, false);
+window.addEventListener('DOMContentLoaded', decrementQuantity, incrementQuantity, totalPrice, inputCheck, false);
 
 
 function decrementQuantity() {
@@ -11,10 +11,9 @@ function decrementQuantity() {
 }
 
 function incrementQuantity(price) {
-    var inputQty = document.getElementById("qty");
-		var newQty = parseInt(document.getElementById("qty").val())+1;
-		var newPrice = newQty * price;
- 
+    var inputQty = document.getElementById("qty").value++;
+    var newPrice = inputQty * price;
+
 }
 
 function totalPrice() {
@@ -33,16 +32,16 @@ function totalPrice() {
 
     var quantity = document.getElementById("qty").value;
 
-        if (smallCandlePrice && quantity.length != 0 && quantity >= 1) {
-            var smallTotal = document.getElementById("qty").value * parseFloat(20.00).toFixed(2);
+    if (smallCandlePrice && quantity.length != 0 && quantity >= 1) {
+        var smallTotal = document.getElementById("qty").value * parseFloat(20.00).toFixed(2);
 
-            document.getElementById("candle-price").innerHTML = "$" + smallTotal.toFixed(2);
-        } else if (largeCandlePrice && quantity.length != 0 && quantity >= 1) {
-            var largeTotal = document.getElementById("qty").value * parseFloat(50.00).toFixed(2);
+        document.getElementById("candle-price").innerHTML = "$" + smallTotal.toFixed(2);
+    } else if (largeCandlePrice && quantity.length != 0 && quantity >= 1) {
+        var largeTotal = document.getElementById("qty").value * parseFloat(50.00).toFixed(2);
 
-            document.getElementById("candle-price").innerHTML = "$" + largeTotal.toFixed(2);
-        } 
- 
+        document.getElementById("candle-price").innerHTML = "$" + largeTotal.toFixed(2);
+    }
+
 }
 
 function inputCheck() {
@@ -54,7 +53,9 @@ function inputCheck() {
     } else if (noInput < 1) {
         alert("Invalid Input! Minimum Quantity is 1");
         return false;
-    }
-    else 
+    } else
         return true;
 }
+
+
+

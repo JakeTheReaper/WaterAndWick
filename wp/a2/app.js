@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', decrementQuantity, incrementQuantity, totalPrice, inputCheck, false);
+window.addEventListener('DOMContentLoaded', decrementQuantity, incrementQuantity, totalPrice, inputCheck, setPrice false);
 
 
 function decrementQuantity() {
@@ -54,4 +54,19 @@ function inputCheck() {
     }
     else 
         return true;
+}
+
+var select = document.querySelector('select');
+var candlePrice = document.querySelector('p');
+
+select.addEventListener('change', setPrice);
+
+function setPrice() {
+    var choice = select.value;
+    
+    if(choice === 'small') {
+        candlePrice.textContent = "$" + parseFloat(20.00).toFixed(2);
+    } else if (choice === 'large') {
+        candlePrice.textContent = "$" + parseFloat(30.00).toFixed(2);
+    }
 }
