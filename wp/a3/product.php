@@ -1,13 +1,14 @@
 <?php
-		session_start();
-		include_once('tools.php');
-        include_once('debug.php');
-		topModule('Water And Wick');
+    error_reporting(E_ALL);
+    session_start();
+    include_once('tools.php');
+    include_once('debug.php');
+    topModule('Water And Wick');
 
 		define(PID, $_GET['pid']);
 		$valid_products = ['BDC001'];
 		if (!isset($_GET['pid']) || !in_array(PID, $valid_products, true)) {
-				header('Location: product.php');
+				header('Location: products.php');
 		}
 
 		$productTree = array (
@@ -26,8 +27,20 @@
 						)
 				)
 		);
-						 
-?>
+
+        $_SESSION['productTree'] = $productTree;
+
+        
+    if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['option'])) {
+        $_SESSION['cart'][$_POST['id']] = $_POST['id'];
+        $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
+        $_SESSION['cart'][$_POST['id']]['option'] = $_POST['option'];  
+        
+        header("Location: cart.php");
+    }
+ 
+
+    ?>
     <div class="container">
         <div class="row">
             <div>
@@ -52,7 +65,7 @@
                 </div>
 
 
-                <form action="cart.php?action=add&PID=" method="post" onsubmit="return inputCheck();">
+                <form action="cart.php?action=add&PID=<?php echo $valid_products[0]; ?>" method="post" onsubmit="return inputCheck();">
                     <input type="hidden" name="id" value="<?php echo $_GET['pid']; ?>">
                     <input type="hidden" name="title" value="<?php echo $productTree[PID]['pTitle']; ?>">
 

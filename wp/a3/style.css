@@ -157,3 +157,10 @@ li {
 .login-footer {
     position: absolute;
 }
+
+h3.cart-heading {
+    color: #005261;
+    text-shadow: none;
+    text-align: left;
+    padding-top: 50px;
+}

@@ -20,7 +20,7 @@ function totalPrice() {
     var small = document.getElementById("small").selected;
     var large = document.getElementById("large").selected;
     if (small) {
-        document.getElementById("candle-price").innerHTML = "$" + parseFloat(20.00).toFixed(2);
+        document.getElementById("candle-price").innerHTML = "$" + parseFloat(25.00).toFixed(2);
     } else if (large) {
         document.getElementById("candle-price").innerHTML = "$" + parseFloat(50.00).toFixed(2);
 
@@ -33,7 +33,7 @@ function totalPrice() {
     var quantity = document.getElementById("qty").value;
 
     if (smallCandlePrice && quantity.length != 0 && quantity >= 1) {
-        var smallTotal = document.getElementById("qty").value * parseFloat(20.00).toFixed(2);
+        var smallTotal = document.getElementById("qty").value * parseFloat(25.00).toFixed(2);
 
         document.getElementById("candle-price").innerHTML = "$" + smallTotal.toFixed(2);
     } else if (largeCandlePrice && quantity.length != 0 && quantity >= 1) {

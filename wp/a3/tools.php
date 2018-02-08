@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
     <script src="https://use.fontawesome.com/5f01efa180.js"></script>
     <script type="text/javascript" src="../a3/app.js"></script>
-		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<link rel="stylesheet" type="text/css" href="../a3/style.css" />
     <title>$pageTitle</title>
 </head>
 
@@ -60,4 +60,5 @@ MAINFOOTER;
 		echo $footer;
 }
 ?>
+        
 

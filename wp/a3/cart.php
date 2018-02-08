@@ -1,58 +1,71 @@
 <?php
-		session_start();
-		include_once('tools.php');
-        include_once('debug.php');
-		topModule('Water And Wick');
+	error_reporting(E_ALL);	
+    session_start();
+    include_once('tools.php');
+    include_once('debug.php');
+    topModule('Water And Wick');
 ?>
-
-    <?php
-    if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['option'])) {
-        echo $_POST['id'];
-        echo "<br>";
-        echo $_POST['qty'];
-        echo "<br>";
-        echo $_POST['option'];
+<?php
+        function clearCart() {
+            unset($_SESSION['cart']);
+        }
         
-        
-    $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
-    $_SESSION['cart'][$_POST['id']]['option'] = $_POST['option'];  
-        
-    header("Location: cart.php");
-    }
+        function totalPrice() {
+            if ($_POST['option'] == 'small') {
+                $unitPrice = '25.00';
+                $quantity = $_POST['qty'];
+                $totalPrice = $quantity * $unitPrice;
+                echo '$' . number_format($totalPrice, 2);
+            } else if ($_POST['option'] == 'large') {
+                $unitPrice = '50.00';
+                $quantity = $_POST['qty'];
+                $totalPrice = $quantity * $unitPrice;
+                echo '$' . number_format($totalPrice, 2);
+            }
+        }
 ?>
-
-        <div class="container">
-            <div class="row">
-                <div>
-                    <h3 class="desc-heading">SHOPPING CART</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div>
-                    <p><strong>ID</strong></p>
-                    <p>
-                        <?php echo $_POST['id']; ?>
-                    </p>
-                    <p><strong>TITLE</strong></p>
-                    <p>
-                        <?php echo $_POST['title']; ?>
-                    </p>
-                    <p><strong>QTY</strong></p>
-                    <p>
-                        <?php echo $_POST['qty']; ?>
-                    </p>
-                    <p><strong>OPTION</strong></p>
-                    <p>
-                        <?php echo $_POST['option']; ?>
-                    </p>
-                </div>
-
-                <div>
-                    <a class="button" href="product.php?pid=BDC001">CONTINUE SHOPPING</a>
-                    <a class="button button-primary" href="">CHECKOUT</a>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div>
+                <h3 class="cart-heading">SHOPPING CART</h3>
             </div>
         </div>
-        <?php
+        <div class="row">
+            <div class="cart-table">
+                <table class="u-full-width">
+                    <tr>
+                        <th>ID</th>
+                        <th>TITLE</th>
+                        <th>QTY</th>
+                        <th>OPTION</th>
+                        <th>PRICE</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <?php echo $_POST['id']; ?>
+                        </td>
+                        <td>
+                            <?php echo $_POST['title']; ?>
+                        </td>
+                        <td>
+                            <?php echo $_POST['qty']; ?>
+                        </td>
+                        <td>
+                            <?php echo $_POST['option']; ?>
+                        </td>
+                        <td>
+                            <?php echo totalPrice(); ?>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <a class="button" href="products.php" onclick="<?php echo clearCart(); ?>">CLEAR CART</a>
+                <a class="button button-primary" href="checkout.php?action=checkout">CHECKOUT</a>
+            </div>
+        </div>
+    </div>
+    <?php
 		endModule();
 ?>
