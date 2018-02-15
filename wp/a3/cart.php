@@ -1,11 +1,20 @@
 <?php
-	error_reporting(E_ALL);	
-    session_start();
+	session_start();
+    error_reporting(E_ALL);	
+    
     include_once('tools.php');
     include_once('debug.php');
     topModule('Water And Wick');
 ?>
 <?php
+    $_SESSION['cart'];
+
+        if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['option'])) {
+        $_SESSION['cart'][$_POST['id']] = $_POST['id'];
+        $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
+        $_SESSION['cart'][$_POST['id']]['option'] = $_POST['option'];  
+    }
+ 
         function clearCart() {
             unset($_SESSION['cart']);
         }
@@ -31,6 +40,7 @@
             </div>
         </div>
         <div class="row">
+            <?php print_r($_SESSION); ?>
             <div class="cart-table">
                 <table class="u-full-width">
                     <tr>

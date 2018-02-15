@@ -164,3 +164,7 @@ h3.cart-heading {
     text-align: left;
     padding-top: 50px;
 }
+.error {
+    color: red;
+    padding: 0.2em;
+}

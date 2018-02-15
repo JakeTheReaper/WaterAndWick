@@ -1,6 +1,7 @@
 <?php
-    error_reporting(E_ALL);
     session_start();
+    error_reporting(E_ALL);
+    
     include_once('tools.php');
     include_once('debug.php');
     topModule('Water And Wick');
@@ -8,7 +9,7 @@
 		define(PID, $_GET['pid']);
 		$valid_products = ['BDC001'];
 		if (!isset($_GET['pid']) || !in_array(PID, $valid_products, true)) {
-				header('Location: products.php');
+            header('Location: products.php');
 		}
 
 		$productTree = array (
@@ -28,17 +29,8 @@
 				)
 		);
 
-        $_SESSION['productTree'] = $productTree;
-
         
-    if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['option'])) {
-        $_SESSION['cart'][$_POST['id']] = $_POST['id'];
-        $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
-        $_SESSION['cart'][$_POST['id']]['option'] = $_POST['option'];  
-        
-        header("Location: cart.php");
-    }
- 
+    
 
     ?>
     <div class="container">
