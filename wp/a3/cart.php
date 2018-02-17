@@ -1,20 +1,20 @@
 <?php
 	session_start();
-    error_reporting(E_ALL);	
+    $_SESSION['cart'] = array (
+        'id' => $_POST['id'], 
+        'title' => $_POST['title'],
+        'qty' => $_POST['qty'], 
+        'option' => $_POST['option']
+    );
+    
+    
     
     include_once('tools.php');
     include_once('debug.php');
     topModule('Water And Wick');
 ?>
-<?php
-    $_SESSION['cart'];
-
-        if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['option'])) {
-        $_SESSION['cart'][$_POST['id']] = $_POST['id'];
-        $_SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
-        $_SESSION['cart'][$_POST['id']]['option'] = $_POST['option'];  
-    }
- 
+    
+ <?php
         function clearCart() {
             unset($_SESSION['cart']);
         }
@@ -40,9 +40,14 @@
             </div>
         </div>
         <div class="row">
-            <?php print_r($_SESSION); ?>
+           <form  class="u-full-width" action="checkout.php?action=checkout" method="post">
+           <input type="hidden" name="id" value="<?php echo $_SESSION['cart']['id']; ?>">
+           <input type="hidden" name="title" value="<?php echo $_SESSION['cart']['title']; ?>">
+           <input type="hidden" name="qty" value="<?php echo $_SESSION['cart']['qty']; ?>">
+           <input type="hidden" name="option" value="<?php echo $_SESSION['cart']['option']; ?>">
+            
             <div class="cart-table">
-                <table class="u-full-width">
+                <table>
                     <tr>
                         <th>ID</th>
                         <th>TITLE</th>
@@ -52,16 +57,16 @@
                     </tr>
                     <tr>
                         <td>
-                            <?php echo $_POST['id']; ?>
+                            <?php echo $_SESSION['cart']['id']; ?>
                         </td>
                         <td>
-                            <?php echo $_POST['title']; ?>
+                            <?php echo $_SESSION['cart']['title']; ?>
                         </td>
                         <td>
-                            <?php echo $_POST['qty']; ?>
+                            <?php echo $_SESSION['cart']['qty']; ?>
                         </td>
                         <td>
-                            <?php echo $_POST['option']; ?>
+                            <?php echo $_SESSION['cart']['option']; ?>
                         </td>
                         <td>
                             <?php echo totalPrice(); ?>
@@ -72,8 +77,9 @@
 
             <div>
                 <a class="button" href="products.php" onclick="<?php echo clearCart(); ?>">CLEAR CART</a>
-                <a class="button button-primary" href="checkout.php?action=checkout">CHECKOUT</a>
+                <input class="button-primary" name="checkout" type="submit" value="CHECKOUT">
             </div>
+            </form>
         </div>
     </div>
     <?php

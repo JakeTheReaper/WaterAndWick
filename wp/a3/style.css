@@ -165,6 +165,5 @@ h3.cart-heading {
     padding-top: 50px;
 }
 .error {
-    color: red;
-    padding: 0.2em;
+    color: #FF0000;
 }

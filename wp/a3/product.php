@@ -1,11 +1,11 @@
 <?php
     session_start();
-    error_reporting(E_ALL);
     
     include_once('tools.php');
     include_once('debug.php');
-    topModule('Water And Wick');
-
+    topModule('Water And Wick');    
+?>
+    <?php
 		define(PID, $_GET['pid']);
 		$valid_products = ['BDC001'];
 		if (!isset($_GET['pid']) || !in_array(PID, $valid_products, true)) {
