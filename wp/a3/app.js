@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', decrementQuantity, incrementQuantity, totalPrice, inputCheck, false);
+window.addEventListener('DOMContentLoaded', decrementQuantity, incrementQuantity, totalPrice, inputCheck, visaInput, false);
 
 
 function decrementQuantity() {
@@ -57,5 +57,9 @@ function inputCheck() {
         return true;
 }
 
-
-
+function visaInput() {
+    //var re = new RegExp("/^4/");
+    //if(re) {
+        document.getElementsByClassName("visa-logo").style.visibility = "visible";
+    //}
+}

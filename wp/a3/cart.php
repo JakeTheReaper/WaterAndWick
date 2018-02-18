@@ -47,7 +47,7 @@
            <input type="hidden" name="option" value="<?php echo $_SESSION['cart']['option']; ?>">
             
             <div class="cart-table">
-                <table>
+                <table class="u-full-width">
                     <tr>
                         <th>ID</th>
                         <th>TITLE</th>

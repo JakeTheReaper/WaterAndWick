@@ -167,3 +167,36 @@ h3.cart-heading {
 .error {
     color: #FF0000;
 }
+h3.receipt-heading {
+    color: #005261;
+    text-shadow: none;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm;
+}
+img.receipt-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.visa-logo {
+    clear: none;
+    width: 75px;
+    padding-left: 50px;
+    visibility: visible;
+    
+}
+input {
+    clear: none;
+}
